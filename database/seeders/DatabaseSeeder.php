@@ -12,6 +12,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call([
+            PageSeeder::class,
+            ComponentSeeder::class,
+        ]);
+        // $this->call(ComponentsTableSeeder::class);
+        // $this->call(ContentSeeder::class);
+        // \App\Models\Book::factory(10)->create();
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
